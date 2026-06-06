@@ -9,8 +9,8 @@
 
 | Notebook | View (static) | Run (interactive) |
 |----------|:---:|:---:|
-| Clustering Analysis | [![nbviewer](https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.svg)](https://nbviewer.org/github/mdrTanvir/SDG-Health-Analytics/blob/main/Clustering_Analysis.ipynb) | [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/mdrTanvir/SDG-Health-Analytics/main?filepath=Clustering_Analysis.ipynb) |
-| Health Prediction | [![nbviewer](https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.svg)](https://nbviewer.org/github/mdrTanvir/SDG-Health-Analytics/blob/main/Health_Prediction.ipynb) | [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/mdrTanvir/SDG-Health-Analytics/main?filepath=Health_Prediction.ipynb) |
+| Clustering Analysis | [![nbviewer](https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.svg)](https://nbviewer.org/github/mdrTanvir/SDG-Health-Analytics/blob/main/Clustering_Analysis.ipynb) | [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/mdrTanvir/SDG-Health-Analytics/HEAD?labpath=Clustering_Analysis.ipynb) |
+| Health Prediction | [![nbviewer](https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.svg)](https://nbviewer.org/github/mdrTanvir/SDG-Health-Analytics/blob/main/Health_Prediction.ipynb) | [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/mdrTanvir/SDG-Health-Analytics/HEAD?labpath=Health_Prediction.ipynb) |
 
 ---
 
