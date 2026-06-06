@@ -32,7 +32,7 @@ This project answers two questions:
 
 **Key finding:** Three clusters emerge, closely aligned with low / middle / high-income country groups and the red / orange / green SDR rating bands respectively.
 
-### Phase 2 — Forecasting & Prediction (Group Project)
+### Phase 2 — Forecasting & Prediction
 
 | Stage | Description |
 |-------|-------------|
@@ -50,7 +50,7 @@ This project answers two questions:
 ```
 SDG3-Health-Analytics/
 ├── Phase1_Individual_Clustering.ipynb   # Clustering analysis (individual)
-├── Phase2_Group_Prediction.ipynb        # Forecasting & prediction (group)
+├── Phase2_Group_Prediction.ipynb        # Forecasting & prediction
 ├── SDR2024-data.xlsx                    # Source data (SDR 2024)
 ├── SDR2025-data.xlsx                    # Reference data (SDR 2025)
 └── outputs/                             # Generated plots and result CSVs
