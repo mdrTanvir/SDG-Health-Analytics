@@ -5,6 +5,15 @@
 
 ---
 
+## Launch Notebooks
+
+| Notebook | View (static) | Run (interactive) |
+|----------|:---:|:---:|
+| Phase 1 — Clustering | [![nbviewer](https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.svg)](https://nbviewer.org/github/mdrTanvir/SDG-Health-Analytics/blob/main/Phase1_Individual_Clustering.ipynb) | [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/mdrTanvir/SDG-Health-Analytics/main?filepath=Phase1_Individual_Clustering.ipynb) |
+| Phase 2 — Prediction | [![nbviewer](https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.svg)](https://nbviewer.org/github/mdrTanvir/SDG-Health-Analytics/blob/main/Phase2_Group_Prediction.ipynb) | [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/mdrTanvir/SDG-Health-Analytics/main?filepath=Phase2_Group_Prediction.ipynb) |
+
+---
+
 ## Problem Statement
 
 SDG Goal 3 (*Good Health and Well-Being*) requires nations to dramatically reduce maternal mortality and raise life expectancy by 2030. The 2024 Sustainable Development Report shows most countries are still rated **orange** or **red** on SDG 3, with only moderate upward trends.
@@ -19,7 +28,7 @@ This project answers two questions:
 
 ## Solution
 
-### Phase 1 — Global Clustering (Individual Project)
+### Phase 1 — Global Clustering
 
 | Step | Description |
 |------|-------------|
@@ -49,8 +58,9 @@ This project answers two questions:
 
 ```
 SDG3-Health-Analytics/
-├── Phase1_Individual_Clustering.ipynb   # Clustering analysis (individual)
+├── Phase1_Individual_Clustering.ipynb   # Clustering analysis
 ├── Phase2_Group_Prediction.ipynb        # Forecasting & prediction
+├── requirements.txt                     # Python dependencies (for Binder)
 ├── SDR2024-data.xlsx                    # Source data (SDR 2024)
 ├── SDR2025-data.xlsx                    # Reference data (SDR 2025)
 └── outputs/                             # Generated plots and result CSVs
@@ -61,7 +71,7 @@ SDG3-Health-Analytics/
 ## Setup
 
 ```bash
-pip install pandas numpy matplotlib seaborn scikit-learn openpyxl scipy
+pip install -r requirements.txt
 jupyter notebook
 ```
 
