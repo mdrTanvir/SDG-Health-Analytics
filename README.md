@@ -9,8 +9,8 @@
 
 | Notebook | View (static) | Run (interactive) |
 |----------|:---:|:---:|
-| Phase 1 — Clustering | [![nbviewer](https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.svg)](https://nbviewer.org/github/mdrTanvir/SDG-Health-Analytics/blob/main/Phase1_Individual_Clustering.ipynb) | [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/mdrTanvir/SDG-Health-Analytics/main?filepath=Phase1_Individual_Clustering.ipynb) |
-| Phase 2 — Prediction | [![nbviewer](https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.svg)](https://nbviewer.org/github/mdrTanvir/SDG-Health-Analytics/blob/main/Phase2_Group_Prediction.ipynb) | [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/mdrTanvir/SDG-Health-Analytics/main?filepath=Phase2_Group_Prediction.ipynb) |
+| Clustering Analysis | [![nbviewer](https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.svg)](https://nbviewer.org/github/mdrTanvir/SDG-Health-Analytics/blob/main/Clustering_Analysis.ipynb) | [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/mdrTanvir/SDG-Health-Analytics/main?filepath=Clustering_Analysis.ipynb) |
+| Health Prediction | [![nbviewer](https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.svg)](https://nbviewer.org/github/mdrTanvir/SDG-Health-Analytics/blob/main/Health_Prediction.ipynb) | [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/mdrTanvir/SDG-Health-Analytics/main?filepath=Health_Prediction.ipynb) |
 
 ---
 
@@ -58,8 +58,8 @@ This project answers two questions:
 
 ```
 SDG3-Health-Analytics/
-├── Phase1_Individual_Clustering.ipynb   # Clustering analysis
-├── Phase2_Group_Prediction.ipynb        # Forecasting & prediction
+├── Clustering_Analysis.ipynb            # Clustering analysis
+├── Health_Prediction.ipynb              # Forecasting & prediction
 ├── requirements.txt                     # Python dependencies (for Binder)
 ├── SDR2024-data.xlsx                    # Source data (SDR 2024)
 ├── SDR2025-data.xlsx                    # Reference data (SDR 2025)
@@ -75,7 +75,7 @@ pip install -r requirements.txt
 jupyter notebook
 ```
 
-Run `Phase1_Individual_Clustering.ipynb` first, then `Phase2_Group_Prediction.ipynb`. All output files are saved to `outputs/`.
+Run `Clustering_Analysis.ipynb` first, then `Health_Prediction.ipynb`. All output files are saved to `outputs/`.
 
 ---
 
