@@ -1,6 +1,5 @@
 # SDG Goal 3 — Global Health Analytics
-
-**Unit:** KIT718 Big Data Analytics · University of Tasmania  
+ 
 **Dataset:** [Sustainable Development Report 2024](https://dashboards.sdgindex.org/)
 
 ---
