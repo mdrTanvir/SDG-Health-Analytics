@@ -17,9 +17,16 @@ def md(source):
     return nbf.v4.new_markdown_cell(source)
 
 
-setup = f'''import warnings
+setup = f'''import os
+import warnings
 from pathlib import Path
 from urllib.request import Request, urlopen
+
+PROJECT_CACHE = Path(".cache").resolve()
+PROJECT_CACHE.mkdir(exist_ok=True)
+os.environ.setdefault("MPLCONFIGDIR", str(PROJECT_CACHE / "matplotlib"))
+os.environ.setdefault("XDG_CACHE_HOME", str(PROJECT_CACHE))
+Path(os.environ["MPLCONFIGDIR"]).mkdir(exist_ok=True)
 
 import numpy as np
 import pandas as pd
