@@ -115,6 +115,49 @@ Candidates are compared using:
 
 For the current SDR data, persistence has the lowest held-out MAE for both maternal mortality and life expectancy. It is therefore selected as the one-step baseline. This result is intentional rather than a limitation: when signals are sparse, slowly changing, or irregularly reported, a more complex linear trend can overreact and produce worse out-of-time estimates.
 
+## Results (SDR 2026 run)
+
+### Clustering result
+
+K-Means was selected because it achieved the higher silhouette score on the same standardised four-feature matrix:
+
+| Method | Silhouette score |
+|---|---:|
+| K-Means (`k=3`) | **0.393** |
+| Ward hierarchical clustering (`k=3`) | 0.381 |
+
+The resulting groups cover 207 countries. Values below are group means for the latest available outcomes and the estimated annual change over the recent period.
+
+| Group | Countries | Maternal mortality | Life expectancy | Maternal-mortality change/year | Life-expectancy change/year |
+|---|---:|---:|---:|---:|---:|
+| Highest pressure | 58 | 310.74 | 65.12 | -13.10 | 0.40 |
+| Transitioning outcomes | 82 | 71.94 | 73.41 | -0.32 | 0.14 |
+| Strong health outcomes | 67 | 8.22 | 80.74 | -0.03 | 0.09 |
+
+Interpretation: the highest-pressure group has the greatest maternal-mortality burden and lowest mean life expectancy, while the strong-outcome group has the inverse pattern. The negative maternal-mortality slopes indicate improvement on average, but the groups should be used for comparison and investigation rather than causal claims.
+
+### Forecast benchmark
+
+The final observation for each country was held out. The table reports held-out one-step performance; lower MAE is better.
+
+**Maternal mortality (207 countries)**
+
+| Model | MAE | R² |
+|---|---:|---:|
+| Persistence | **10.922** | **0.983** |
+| Full-history linear trend | 19.535 | 0.938 |
+| Recent linear trend | 20.063 | 0.917 |
+
+**Life expectancy (208 countries)**
+
+| Model | MAE | R² |
+|---|---:|---:|
+| Persistence | **0.185** | **0.999** |
+| Recent linear trend | 0.593 | 0.977 |
+| Full-history linear trend | 0.663 | 0.967 |
+
+Result: carrying forward the latest observed value is the selected one-step estimator for both indicators. It substantially improves on the tested trend models in held-out error and avoids assuming that a recent linear movement will continue.
+
 ## Reproduce the analysis
 
 ### Interactive notebooks
